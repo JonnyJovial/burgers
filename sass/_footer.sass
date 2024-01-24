@@ -1,0 +1,62 @@
+.footer
+    background: url(../img/fon-2.png)
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    justify-items: center
+    align-items: center
+    text-align: center
+    overflow: hidden
+
+    &__logo
+        img
+            width: 6rem
+            height: 6rem
+    &__dilivery
+        position: relative
+        img
+            width: 25rem
+            height: 20rem
+            &:hover
+                filter: hue-rotate(360deg)
+                transition: 3s all
+                transform:  translateX(40rem)
+    p
+        font-size: 1.6rem
+        color: $color-white
+        position: absolute
+        display: inline-block
+        top: 0rem
+        left: -2rem
+        width: 15rem
+
+    &__icons
+        display: flex
+        justify-content: space-evenly
+        width: 20rem
+        padding: 1rem
+        img
+            height: 4rem
+            width: 4rem
+            &:hover
+                filter: hue-rotate(360deg)
+                transition: 3s all
+                transform: rotate(360deg) translateY(-.5rem)
+                cursor: pointer
+
+    &__list-1
+        color: $color-white
+        font-size: 1.6rem
+        li
+            padding-bottom: 2rem
+        span
+            font-weight: 700
+
+    &__li
+        &:hover
+                animation: MinAndBig 3s infinite linear
+                cursor: pointer
+                transition: all 1s
+                color: $color-orange
+
+    &__text-2
+        transform: translateY(-1.7rem)

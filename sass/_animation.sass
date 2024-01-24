@@ -1,0 +1,72 @@
+@keyframes LeftToRight
+    0%
+        opacity: 0
+        transform: translateX(-5rem)
+        color: $color-white
+
+    70%
+        opacity: 1
+        transform: translateX(1rem)
+    100%
+        opacity: 1
+        transform: translateX(0)
+
+@keyframes RightToLeft
+    0%
+        opacity: 0
+        transform: translateX(5rem)
+        color: $color-white
+
+    70%
+        opacity: 1
+        transform: translateX(-1rem)
+
+    100%
+        opacity: 1
+        transform: translateX(0)
+
+
+@keyframes UpToDown
+    0%
+        opacity: 0
+        transform: translateY(-4rem)
+        color: $color-white
+
+    100%
+        opacity: 1
+        transform: translateX(0)
+
+    
+@keyframes MinAndBig
+    // 0%
+    //     font-size: 5rem
+
+    // 50%
+    //     font-size: 6rem
+
+    // 100%
+    //     font-size: 5rem
+
+    0%
+        transform: rotate(0deg)
+        filter: hue-rotate(0deg)
+
+    35%
+        transform: rotate(10deg)
+
+    75%
+        transform: rotate(-10deg)
+
+    100%
+        transform: rotate(0deg)
+        filter: hue-rotate(360deg)
+
+@keyframes UpCards
+    0%
+        transform: translateY(0rem)
+
+    50%
+        transform: translateY(-1rem)
+
+    100%
+        transform: translateY(0rem)
